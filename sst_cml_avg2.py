@@ -153,14 +153,17 @@ data.head(10)
 #%%
 
 # Histogram
-columns = ['SST12', 'SST3', 'SST34', 'SST4']
-titles = ['a', 'b', 'c', 'd']
+# For DANE = 5001
+data_unique = data[data['DANE'] == 5001]
+
+columnas = ['SST12', 'SST3', 'SST34', 'SST4']
+titulos = ['a', 'b', 'c', 'd']
 
 fig, axes = plt.subplots(2, 2, figsize=(12, 10))
 axes = axes.ravel()  
 
-for i, (col, titulo) in enumerate(zip(columns, titles)):
-    axes[i].hist(data[col], bins=50, edgecolor='black', alpha=0.7)  # Puedes ajustar el número de bins
+for i, (col, titulo) in enumerate(zip(columnas, titulos)):
+    axes[i].hist(data_unique[col], bins=50, edgecolor='black', alpha=0.7) 
     axes[i].set_title(titulo, fontsize=14)
     axes[i].set_xlabel('Temperature °C')
     axes[i].set_ylabel('Frecuency')
@@ -169,10 +172,9 @@ for i, (col, titulo) in enumerate(zip(columns, titles)):
 plt.tight_layout()
 plt.show()
 
-
-for col in columns:
-    sd = data[col].std()
-    print(f"Standard devaiation of {col}: {sd:.4f}")
+for col in columnas:
+    sd = data_unique[col].std()
+    print(f"Standard deviation of {col}: {sd:.4f}")
     
 #%%
 
