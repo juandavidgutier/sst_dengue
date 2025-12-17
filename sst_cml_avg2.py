@@ -1153,7 +1153,7 @@ print(placebo_SST3_avg2)
 
 data_SST34_avg2 = data[['DANE_normalized', 'DANE_year_normalized', 'DANE_period_normalized', 'Year', 'sin_month', 'cos_month',
                       'SST12_avg2', 'SST3_avg2', 'SST34_avg2', 'SST4_avg2', 'NATL_avg2', 'SATL_avg2', 'TROP_avg2', 
-                      'SOI_avg2', 'ESOI_avg2', 'cpolr_avg2', 'wpac850_avg2', 'cpac850_avg2', 'epac850_avg2', 'qbo_u30_avg2', 'altitude', 'consensus'
+                      'SOI_avg2', 'ESOI_avg2', 'cpolr_avg2', 'wpac850_avg2', 'cpac850_avg2', 'epac850_avg2', 'qbo_u30_avg2', 'altitude', 'consensus',
                       't2m_avg2', 'tp_avg2', 'MPI', 'pop_density', 'excess', 'SST34_t1']]
 
 scaler = StandardScaler()
