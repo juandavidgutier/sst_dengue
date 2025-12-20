@@ -2077,8 +2077,8 @@ import numpy as np
 labels = [
     'EL Niño region 1-2 (sd = 2.33 °C)',
     'EL Niño region 3 (sd = 1.24 °C)',
-    'EL Niño region 34 (sd = 0.97 °C)',
-    'EL Niño region4 (sd = 0.67 °C)'
+    'EL Niño region 3-4 (sd = 0.97 °C)',
+    'EL Niño region 4 (sd = 0.67 °C)'
 ]
 
 colors = ['red', 'green', 'orange', 'blue']
